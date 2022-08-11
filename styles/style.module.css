@@ -1,0 +1,78 @@
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: sans-serif;
+    background-color: #ecf0f3;
+} */
+
+.container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #232526;
+    /* fallback for old browsers */
+    background: linear-gradient(to right, #414345, #232526);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #414345, #232526);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.calc {
+    box-shadow: 6px 6px 12px #fff, 6px 6px 13px rgba(0, 0, 0, 0.16);
+    border-radius: 28px;
+    padding: 16px;
+    display: grid;
+    grid-template-columns: repeat(4, 66px);
+}
+
+.output,
+.currentOp {
+    grid-column: span 4;
+    height: 68px;
+    width: 258px;
+    box-shadow: inset 6px 6px 12px #fff, 6px 6px 13px rgba(0, 0, 0, 0.16);
+    background-color: #ecf0f3;
+    border: none;
+    border-radius: 32px;
+    color: rgb(26, 25, 25);
+    text-align: end;
+    margin: 40px 0 30px 0;
+    padding: 20px;
+    font-size: 40px;
+    padding-bottom: 62px;
+    overflow: hidden;
+}
+
+.btn {
+    box-shadow: inset 6px 6px 12px #fff, 6px 6px 13px rgba(0, 0, 0, 0.16);
+    background-color: #ecf0f3;
+    border: none;
+    border-radius: 10px;
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+}
+
+.equals {
+    
+    width:  120px;
+    border-radius: 15px;
+    /* box-shadow: inset 6px 6px 12px #fff, 6px 6px 13px rgba(0, 0, 0, 0.16);
+    background-color: #ecf0f3; */
+    margin: 10px;
+    font-weight: bold;
+    font-size: 20px;
+    border: none;
+}
+
+
+.btn:hover {
+    opacity: 0.5;
+}
+
